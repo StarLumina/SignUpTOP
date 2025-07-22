@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: 'Nordic';
+    src: url(Resources/Norse-Bold.otf);
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sideBar{
+    background-image:url("photo-1585202900225-6d3ac20a6962.avif");
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo{
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.forms{
+    flex-grow: 3;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ededee;
+}
+
+form{
+    position: absolute;
+}
+
+h1{
+    color: white;
+    display: inline;
+    font-size: 6rem;
+    font-family: 'Nordic';
+    font-weight: lighter;
+}
+
+label {
+    display: block;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: -10rem;
+}
+
+button{
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 18px;
+    background-color: #596D48;
+    font-weight: 700;
+    font-size: 1rem;
+    border-style: none;
+}
+
+.greentext{
+    color: #596D48;
+}
+
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+input{
+    border-radius: 4px;
+    border: solid #E5E7EB 1px;
+    padding: 0.5rem;
+    width: 18rem;
+    height: 2rem;
+}
+
+p{
+    max-width: 65ch;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input:invalid{
+    border: solid red 1px;
+}
+
+legend{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+input:focus{
+    border: dotted blue 1px;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.action,.signUpButton{
+    background-color: #ededee;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.requirements{
+    background-color: white;
+    flex-grow: 1;
+    box-shadow: 4px 4px 4px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    /* left: -3rem; */
+    width: 50%;
+    padding: 12px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+.allFields{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
