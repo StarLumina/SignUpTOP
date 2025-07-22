@@ -41,6 +41,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: #ededee;
+    position: relative;
 }
 
 form{
@@ -71,12 +72,14 @@ footer{
 
 button{
     color: white;
-    padding: 1rem 3rem;
-    border-radius: 18px;
+    padding: 1rem 4rem;
+    border-radius: 12px;
     background-color: #596D48;
     font-weight: 700;
     font-size: 1rem;
     border-style: none;
+    margin-bottom: 28px;
+    margin-top: 24%;
 }
 
 .greentext{
@@ -100,6 +103,7 @@ p{
     max-width: 65ch;
     font-size: 1.2rem;
     font-weight: 500;
+    margin-bottom: 3rem;
 }
 
 input:invalid{
@@ -115,6 +119,7 @@ legend{
 input:focus{
     border: dotted blue 1px;
     box-shadow: 4px 4px 4px gray;
+    outline: none;
 }
 
 .action,.signUpButton{
@@ -126,15 +131,19 @@ input:focus{
 .requirements{
     background-color: white;
     flex-grow: 1;
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: 0px 4px 4px gray;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
     /* left: -3rem; */
-    width: 50%;
-    padding: 12px;
+    width: 100%;
+    padding: 18px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    max-height: 40%;
 }
 
 .field{
@@ -143,8 +152,16 @@ input:focus{
 }
 
 .allFields{
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+input[required]{
+    margin-bottom: 24px;
+}
+
+button + p{
+    font-size: 1rem;
 }
